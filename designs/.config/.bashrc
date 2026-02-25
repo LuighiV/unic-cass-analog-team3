@@ -184,7 +184,7 @@ _path_add_tool_bin "openroad"
 # Based on https://github.com/Jianxun/iic-osic-tools-project-template/blob/main/designs/.designinit
 
 echo "Loading settings from template"
-export DESIGNS="~/designs"
+export DESIGNS="${HOME}/designs"
 
 cd ${DESIGNS}
 export PATH="${DESIGNS}/scripts:${PATH}"
@@ -192,8 +192,10 @@ export PATH="${DESIGNS}/scripts:${PATH}"
 # Xschem configuration
 \cp -f ./.config/.xschem/xschemrc ~/.xschem/xschemrc
 
-
 # Klayout configuration
+\cp -f ./.config/.klayout/klayoutrc ~/.klayout/klayoutrc
+
+# Klayout libraries
 mkdir -p ~/.klayout/libraries
 
 alias klayout='klayout -rm $DESIGNS/scripts/klayout_lib_manager.py -geometry 1600x900+100+50 -e'
@@ -202,6 +204,12 @@ alias klayout='klayout -rm $DESIGNS/scripts/klayout_lib_manager.py -geometry 160
 if [ ! -L ~/.klayout/libraries/sg13g2_io.gds ]; then
   ln -s /home/designer/designs/libs/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds ~/.klayout/libraries/
 fi
+
+# loading IHP std cells.
+if [ ! -L ~/.klayout/libraries/sg13g2_stdcell.gds ]; then
+  ln -s /home/designer/designs/libs/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds ~/.klayout/libraries/
+fi
+
 
 # Shell, extend local installed packages
 export PATH="${DESIGNS}/user_setup/bin:$PATH"

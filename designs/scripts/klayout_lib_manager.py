@@ -2,10 +2,16 @@ import json
 import os
 from pya import Application, Action, Library
 
+blacklist={"IHP-Open-PDK"}
+
 def find_gds_files(root_dir):
     """Find all GDS files under the specified directory."""
     gds_files = {}
-    for dirpath, dirnames, filenames in os.walk(root_dir):
+    for dirpath, dirnames, filenames in os.walk(root_dir,topdown=True):
+
+        #Modify the 'dirnames' list in-place to filter out blacklisted folders
+        dirnames[:] = [d for d in dirnames if d not in blacklist]
+
         for filename in filenames:
             if filename.endswith('.gds'):
                 full_path = os.path.join(dirpath, filename)
@@ -24,7 +30,7 @@ def load_libraries(libs):
         lib.register(name)
 
 def reload_libraries():
-    root_dir = "~/designs/libs"
+    root_dir = f"{os.environ['HOME']}/designs/libs"
     libs = find_gds_files(root_dir)
     # Load libraries directly from gds_files
     load_libraries(libs)
