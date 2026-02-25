@@ -4,6 +4,3 @@
 [submodule "designs/unic-cass-wrapper"]
 	path = designs/unic-cass-wrapper
 	url = git@github.com:unic-cass/unic-cass-wrapper.git
-[submodule "designs/launch-checks"]
-	path = designs/launch-checks
-	url = git@github.com:LuighiV/launch-checks.git
