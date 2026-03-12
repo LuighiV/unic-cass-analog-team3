@@ -1,4 +1,4 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 12/03/2026 05:16
+* Extracted by KLayout with SG13G2 LVS runset on : 12/03/2026 06:02
 
 .SUBCKT user_project_wrapper VDD VSS analog_io[9] analog_io[10] analog_io[11]
 + analog_io[12] analog_io[13] analog_io[14] analog_io[15] analog_io[16]
@@ -188,8 +188,8 @@ X$219 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
 X$220 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler1000
 X$221 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
 X$222 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler200
-R$1 \$1 IOVSS ptap1 A=40674.96p P=3929.688u
-R$4 \$1 VSS ptap1 A=52.7736p P=338.816u
+R$1 \$1 VSS ptap1 A=52.7736p P=338.816u
+R$2 \$1 IOVSS ptap1 A=40674.96p P=3929.688u
 .ENDS user_project_wrapper
 
 .SUBCKT sg13g2_IOPadVss \$1 vss iovss iovss1 iovdd
@@ -226,31 +226,31 @@ R$2 \$1 vss ptap1 A=24p P=160.6u
 .ENDS sg13g2_IOPadIOVdd
 
 .SUBCKT sg13g2_Filler200 \$1 iovss1 iovss2 iovss3 vss
-R$1 \$1 iovss1 ptap1 A=13.7536p P=50.24u
-R$2 \$1 iovss2 ptap1 A=13.4736p P=49.24u
-R$3 \$1 iovss3 ptap1 A=13.748p P=50.22u
-R$4 \$1 vss ptap1 A=0.678p P=5.12u
+R$1 \$1 vss ptap1 A=0.678p P=5.12u
+R$2 \$1 iovss3 ptap1 A=13.748p P=50.22u
+R$3 \$1 iovss2 ptap1 A=13.4736p P=49.24u
+R$4 \$1 iovss1 ptap1 A=13.7536p P=50.24u
 .ENDS sg13g2_Filler200
 
 .SUBCKT sg13g2_Filler400 \$1 iovss1 iovss2 iovss3 vss
-R$1 \$1 iovss1 ptap1 A=38.3136p P=52.24u
-R$2 \$1 iovss2 ptap1 A=37.5336p P=51.24u
-R$3 \$1 iovss3 ptap1 A=38.298p P=52.22u
-R$4 \$1 vss ptap1 A=0.672p P=5.08u
+R$1 \$1 vss ptap1 A=0.672p P=5.08u
+R$2 \$1 iovss3 ptap1 A=38.298p P=52.22u
+R$3 \$1 iovss2 ptap1 A=37.5336p P=51.24u
+R$4 \$1 iovss1 ptap1 A=38.3136p P=52.24u
 .ENDS sg13g2_Filler400
 
 .SUBCKT sg13g2_Filler1000 \$1 iovss1 iovss2 iovss3 vss
-R$1 \$1 iovss1 ptap1 A=110.52p P=58.12u
-R$2 \$1 iovss2 ptap1 A=108.27p P=57.12u
-R$3 \$1 iovss3 ptap1 A=110.475p P=58.1u
-R$4 \$1 vss ptap1 A=1.368p P=9.72u
+R$1 \$1 vss ptap1 A=1.368p P=9.72u
+R$2 \$1 iovss3 ptap1 A=110.475p P=58.1u
+R$3 \$1 iovss2 ptap1 A=108.27p P=57.12u
+R$4 \$1 iovss1 ptap1 A=110.52p P=58.12u
 .ENDS sg13g2_Filler1000
 
 .SUBCKT sg13g2_Filler4000 \$1 iovss1 iovss2 iovss3 vss
-R$1 \$1 iovss1 ptap1 A=478.92p P=88.12u
-R$2 \$1 iovss2 ptap1 A=469.17p P=87.12u
-R$3 \$1 iovss3 ptap1 A=478.725p P=88.1u
-R$4 \$1 vss ptap1 A=5.85p P=39.6u
+R$1 \$1 vss ptap1 A=5.85p P=39.6u
+R$2 \$1 iovss3 ptap1 A=478.725p P=88.1u
+R$3 \$1 iovss2 ptap1 A=469.17p P=87.12u
+R$4 \$1 iovss1 ptap1 A=478.92p P=88.12u
 .ENDS sg13g2_Filler4000
 
 .SUBCKT sg13g2_IOPadAnalog \$1 pad iovss iovdd iovdd$1 vss
