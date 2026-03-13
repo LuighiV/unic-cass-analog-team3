@@ -92,7 +92,8 @@ fi
 # ------------------
 
 # Compile OSDI file if it doesn't exists
-IHP_OPENVAF_DIR=$PDK_ROOT/ihp-sg13g2/libs.tech/ngspice/openvaf
+#IHP_OPENVAF_DIR=$PDK_ROOT/ihp-sg13g2/libs.tech/ngspice/openvaf
+IHP_OPENVAF_DIR=/opt/pdks/ihp-sg13g2/libs.tech/ngspice/openvaf
 if [ ! -f "$IHP_OPENVAF_DIR/psp103_nqs.osdi" ]; then
     echo "Compiling ihp-sg13g2 osdi files"
     openvaf $IHP_OPENVAF_DIR/psp103_nqs.va --output /tmp/psp103_nqs.osdi
@@ -115,7 +116,8 @@ set_pdk () {
     esac
 
     export PDK=$1
-    export PDK_ROOT=~/designs/libs/IHP-Open-PDK
+    #export PDK_ROOT=~/designs/libs/IHP-Open-PDK
+    export PDK_ROOT=/opt/pdks
     export PDKPATH=$PDK_ROOT/$PDK
     export SPICE_USERINIT_DIR=$PDK_ROOT/$PDK/libs.tech/ngspice
     export KLAYOUT_HOME=$HOME/.klayout:$PDK_ROOT/$PDK/libs.tech/klayout
@@ -192,11 +194,13 @@ export PATH="${DESIGNS}/scripts:${PATH}"
 # Xschem configuration
 \cp -f ./.config/.xschem/xschemrc ~/.xschem/xschemrc
 
-# Klayout configuration
-\cp -f ./.config/.klayout/klayoutrc ~/.klayout/klayoutrc
 
 # Klayout libraries
 mkdir -p ~/.klayout/libraries
+
+# Klayout configuration
+\cp -f ./.config/.klayout/klayoutrc ~/.klayout/klayoutrc
+
 
 alias klayout='klayout -rm $DESIGNS/scripts/klayout_lib_manager.py -geometry 1600x900+100+50 -e'
 
