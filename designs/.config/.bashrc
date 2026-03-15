@@ -124,6 +124,7 @@ set_pdk () {
     export KLAYOUT_PATH=$KLAYOUT_HOME:$(realpath $TOOLS/klayout/download)
 
     #alias xschem='xschem --rcfile $PDK_ROOT/$PDK/libs.tech/xschem/xschemrc'
+    unalias xschem
     alias xschemtcl='xschem --rcfile $PDK_ROOT/$PDK/libs.tech/xschem/xschemrc'
     alias magic='magic -rcfile $PDK_ROOT/$PDK/libs.tech/magic/*.magicrc'
 
