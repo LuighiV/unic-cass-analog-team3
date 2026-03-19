@@ -1,0 +1,374 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 12/03/2026 06:02
+
+.SUBCKT user_project_wrapper VDD VSS analog_io[9] analog_io[10] analog_io[11]
++ analog_io[12] analog_io[13] analog_io[14] analog_io[15] analog_io[16]
++ analog_io[17] IOVDD IOVSS analog_io[0] analog_io[18] analog_io[1]
++ analog_io[19] analog_io[2] analog_io[20] analog_io[3] analog_io[21]
++ analog_io[4] analog_io[22] analog_io[5] analog_io[23] analog_io[6]
++ analog_io[24] analog_io[7] analog_io[25] analog_io[8] analog_io[26]
++ analog_io[27] analog_io[28] analog_io[29] analog_io[30] analog_io[31]
++ analog_io[32] analog_io[33] analog_io[34] analog_io[35]
+X$1 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$3 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler1000
+X$4 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$5 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler200
+X$6 \$1 VDD IOVSS IOVSS VSS sg13g2_IOPadVdd
+X$8 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$9 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$10 \$1 VSS IOVSS IOVSS IOVDD sg13g2_IOPadVss
+X$12 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$13 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$14 \$1 analog_io[9] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$16 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$17 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$18 \$1 analog_io[10] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$20 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$21 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$22 \$1 analog_io[11] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$24 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$25 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$26 \$1 analog_io[12] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$28 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$29 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$30 \$1 analog_io[13] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$32 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$33 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$34 \$1 analog_io[14] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$36 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$37 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$38 \$1 analog_io[15] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$40 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$41 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$42 \$1 analog_io[16] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$44 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$45 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$46 \$1 analog_io[17] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$48 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$49 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$50 \$1 IOVDD IOVSS IOVSS VSS sg13g2_IOPadIOVdd
+X$52 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$53 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$54 \$1 IOVSS IOVDD VSS sg13g2_IOPadIOVss
+X$56 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$57 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler1000
+X$58 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$59 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler200
+X$61 \$1 analog_io[0] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$63 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$64 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$65 \$1 VSS IOVSS IOVSS IOVDD sg13g2_IOPadVss
+X$67 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$68 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$69 \$1 VDD IOVSS IOVSS VSS sg13g2_IOPadVdd
+X$71 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler200
+X$72 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$73 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler1000
+X$74 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$75 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$76 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$77 \$1 analog_io[1] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$79 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$80 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$81 \$1 analog_io[2] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$83 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$84 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$85 \$1 analog_io[3] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$87 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$88 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$89 \$1 analog_io[4] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$91 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$92 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler1000
+X$93 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$94 \$1 VDD IOVSS IOVSS VSS sg13g2_IOPadVdd
+X$95 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler200
+X$96 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$97 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$98 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$99 \$1 analog_io[18] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$100 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$101 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$102 \$1 analog_io[19] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$103 \$1 VSS IOVSS IOVSS IOVDD sg13g2_IOPadVss
+X$104 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$105 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$106 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$107 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$108 \$1 analog_io[21] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$109 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$110 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$111 \$1 analog_io[22] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$112 \$1 analog_io[20] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$113 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$121 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$122 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$123 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$124 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$125 \$1 analog_io[5] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$127 \$1 analog_io[23] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$129 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$130 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$131 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$132 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$133 \$1 analog_io[6] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$135 \$1 analog_io[24] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$137 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$138 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$139 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$140 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$141 \$1 analog_io[7] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$143 \$1 analog_io[25] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$145 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$146 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$147 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$148 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$149 \$1 analog_io[8] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$151 \$1 analog_io[26] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$153 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$154 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$155 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$156 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$157 \$1 IOVDD IOVSS IOVSS VSS sg13g2_IOPadIOVdd
+X$159 \$1 IOVDD IOVSS IOVSS VSS sg13g2_IOPadIOVdd
+X$161 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$162 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$163 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$164 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$165 \$1 IOVSS IOVDD VSS sg13g2_IOPadIOVss
+X$167 \$1 IOVSS IOVDD VSS sg13g2_IOPadIOVss
+X$169 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$170 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler1000
+X$171 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$172 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler1000
+X$173 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$174 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler200
+X$175 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$176 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler200
+X$178 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$179 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler1000
+X$180 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$181 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler200
+X$182 \$1 IOVDD IOVSS IOVSS VSS sg13g2_IOPadIOVdd
+X$183 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$184 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$185 \$1 IOVSS IOVDD VSS sg13g2_IOPadIOVss
+X$186 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$187 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$188 \$1 analog_io[27] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$189 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$190 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$191 \$1 analog_io[28] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$192 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$193 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$194 \$1 analog_io[29] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$195 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$196 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$197 \$1 analog_io[30] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$198 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$199 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$200 \$1 analog_io[31] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$201 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$202 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$203 \$1 analog_io[32] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$204 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$205 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$206 \$1 analog_io[33] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$207 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$208 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$209 \$1 analog_io[34] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$210 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$211 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$212 \$1 analog_io[35] IOVSS IOVDD IOVDD VSS sg13g2_IOPadAnalog
+X$213 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$214 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$215 \$1 IOVDD IOVSS IOVSS VSS sg13g2_IOPadIOVdd
+X$216 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$217 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$218 \$1 IOVSS IOVDD VSS sg13g2_IOPadIOVss
+X$219 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler4000
+X$220 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler1000
+X$221 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler400
+X$222 \$1 IOVSS IOVSS IOVSS VSS sg13g2_Filler200
+R$1 \$1 VSS ptap1 A=52.7736p P=338.816u
+R$2 \$1 IOVSS ptap1 A=40674.96p P=3929.688u
+.ENDS user_project_wrapper
+
+.SUBCKT sg13g2_IOPadVss \$1 vss iovss iovss1 iovdd
+X$1 \$1 iovss vss vss sg13g2_DCNDiode
+X$2 iovdd vss vss sg13g2_DCPDiode_noptap
+R$1 \$1 iovss1 ptap1 A=5407.1p P=703.48u
+R$2 \$1 vss ptap1 A=24p P=160.6u
+.ENDS sg13g2_IOPadVss
+
+.SUBCKT sg13g2_IOPadVdd \$1 vdd iovss iovss1 vss
+X$1 \$1 iovss vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd
++ vdd vdd vdd vdd vdd vdd \$10 sg13g2_Clamp_N43N43D4R
+X$2 vdd \$6 sg13g2_RCClampResistor
+X$3 \$1 iovss1 \$6 \$10 vdd sg13g2_RCClampInverter_noptap
+R$1 \$1 iovss1 ptap1 A=2051.93485p P=727.53u
+R$2 \$1 vss ptap1 A=24p P=160.6u
+.ENDS sg13g2_IOPadVdd
+
+.SUBCKT sg13g2_IOPadIOVss \$1 iovss iovdd vss
+X$1 \$1 iovss iovss iovss sg13g2_DCNDiode
+X$2 iovdd iovss iovss sg13g2_DCPDiode_noptap
+R$1 \$1 iovss ptap1 A=5407.1p P=703.48u
+R$2 \$1 vss ptap1 A=24p P=160.6u
+.ENDS sg13g2_IOPadIOVss
+
+.SUBCKT sg13g2_IOPadIOVdd \$1 iovdd iovss iovss1 vss
+X$1 iovdd \$5 sg13g2_RCClampResistor
+X$2 \$1 iovss iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd
++ iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd \$7
++ sg13g2_Clamp_N43N43D4R
+X$3 \$1 iovss1 \$5 \$7 iovdd sg13g2_RCClampInverter_noptap
+R$1 \$1 iovss1 ptap1 A=2052.0763p P=727.52u
+R$2 \$1 vss ptap1 A=24p P=160.6u
+.ENDS sg13g2_IOPadIOVdd
+
+.SUBCKT sg13g2_Filler200 \$1 iovss1 iovss2 iovss3 vss
+R$1 \$1 vss ptap1 A=0.678p P=5.12u
+R$2 \$1 iovss3 ptap1 A=13.748p P=50.22u
+R$3 \$1 iovss2 ptap1 A=13.4736p P=49.24u
+R$4 \$1 iovss1 ptap1 A=13.7536p P=50.24u
+.ENDS sg13g2_Filler200
+
+.SUBCKT sg13g2_Filler400 \$1 iovss1 iovss2 iovss3 vss
+R$1 \$1 vss ptap1 A=0.672p P=5.08u
+R$2 \$1 iovss3 ptap1 A=38.298p P=52.22u
+R$3 \$1 iovss2 ptap1 A=37.5336p P=51.24u
+R$4 \$1 iovss1 ptap1 A=38.3136p P=52.24u
+.ENDS sg13g2_Filler400
+
+.SUBCKT sg13g2_Filler1000 \$1 iovss1 iovss2 iovss3 vss
+R$1 \$1 vss ptap1 A=1.368p P=9.72u
+R$2 \$1 iovss3 ptap1 A=110.475p P=58.1u
+R$3 \$1 iovss2 ptap1 A=108.27p P=57.12u
+R$4 \$1 iovss1 ptap1 A=110.52p P=58.12u
+.ENDS sg13g2_Filler1000
+
+.SUBCKT sg13g2_Filler4000 \$1 iovss1 iovss2 iovss3 vss
+R$1 \$1 vss ptap1 A=5.85p P=39.6u
+R$2 \$1 iovss3 ptap1 A=478.725p P=88.1u
+R$3 \$1 iovss2 ptap1 A=469.17p P=87.12u
+R$4 \$1 iovss1 ptap1 A=478.92p P=88.12u
+.ENDS sg13g2_Filler4000
+
+.SUBCKT sg13g2_IOPadAnalog \$1 pad iovss iovdd iovdd$1 vss
+X$1 \$1 iovss padres pad iovdd$1 sg13g2_SecondaryProtection
+X$2 \$1 iovss pad pad sg13g2_DCNDiode
+X$3 \$1 iovss pad pad pad pad pad pad pad pad pad pad sg13g2_Clamp_N20N0D
+X$4 iovdd pad pad sg13g2_DCPDiode_noptap
+R$1 \$1 iovss ptap1 A=4373.9448p P=1112.3u
+R$2 \$1 vss ptap1 A=23.85p P=159.6u
+M$4 iovdd \$I11 pad iovdd sg13_hv_pmos L=0.6u W=266.4u AS=123.21p AD=123.21p
++ PS=316.72u PD=316.72u
+R$44 iovdd \$I11 rppd w=0.5u l=12.9u ps=0 b=0 m=1
+.ENDS sg13g2_IOPadAnalog
+
+.SUBCKT sg13g2_RCClampResistor p1 p2
+R$26 p2 p1 rppd w=1u l=520u ps=0 b=0 m=1
+.ENDS sg13g2_RCClampResistor
+
+.SUBCKT sg13g2_Clamp_N43N43D4R \$2 iovss pad[0] pad[1] pad[2] pad[3] pad[4]
++ pad[5] pad[6] pad[7] pad[8] pad[9] pad[10] pad[11] pad[12] pad[13] pad[14]
++ pad[15] pad[16] pad[17] pad[18] pad[19] pad[20] pad[21] gate
+M$1 iovss gate pad[0] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=18.656p AD=16.016p
++ PS=61.28u PD=42.48u
+M$3 iovss gate pad[1] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$5 iovss gate pad[2] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$7 iovss gate pad[3] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$9 iovss gate pad[4] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$11 iovss gate pad[5] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$13 iovss gate pad[6] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$15 iovss gate pad[7] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$17 iovss gate pad[8] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$19 iovss gate pad[9] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$21 iovss gate pad[10] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$23 iovss gate pad[11] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$25 iovss gate pad[12] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$27 iovss gate pad[13] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$29 iovss gate pad[14] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$31 iovss gate pad[15] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$33 iovss gate pad[16] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$35 iovss gate pad[17] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$37 iovss gate pad[18] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$39 iovss gate pad[19] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$41 iovss gate pad[20] \$2 sg13_hv_nmos L=0.6u W=35.2u AS=16.016p AD=16.016p
++ PS=42.48u PD=42.48u
+M$43 iovss gate pad[21] \$2 sg13_hv_nmos L=0.6u W=17.6u AS=5.632p AD=13.024p
++ PS=20.16u PD=41.12u
+D$173 \$2 gate dantenna A=0.2304p P=1.92u m=1
+R$174 \$2 iovss ptap1 A=65.6472p P=386.16u
+.ENDS sg13g2_Clamp_N43N43D4R
+
+.SUBCKT sg13g2_RCClampInverter_noptap \$1 iovss1 in out supply
+M$1 iovss1 in iovss1 \$1 sg13_hv_nmos L=9.5u W=126u AS=26.64p AD=23.94p
++ PS=149.92u PD=131.32u
+M$8 iovss1 in out \$1 sg13_hv_nmos L=0.5u W=108u AS=20.52p AD=23.22p PS=112.56u
++ PD=131.16u
+M$27 supply in out supply sg13_hv_pmos L=0.5u W=350u AS=67.55p AD=67.55p
++ PS=376.3u PD=376.3u
+.ENDS sg13g2_RCClampInverter_noptap
+
+.SUBCKT sg13g2_SecondaryProtection \$1 iovss core pad iovdd
+D$1 \$1 core dantenna A=1.984p P=7.48u m=1
+D$2 core iovdd dpantenna A=3.1872p P=11.24u m=1
+R$3 pad core rppd w=1u l=2u ps=0 b=0 m=1
+R$4 \$1 iovss ptap1 A=9.0304p P=53.12u
+.ENDS sg13g2_SecondaryProtection
+
+.SUBCKT sg13g2_DCPDiode_noptap cathode anode1 anode2
+D$1 anode2 cathode dpantenna A=35.0028p P=58.08u m=1
+D$2 anode1 cathode dpantenna A=35.0028p P=58.08u m=1
+.ENDS sg13g2_DCPDiode_noptap
+
+.SUBCKT sg13g2_DCNDiode \$2 anode cathode1 cathode2
+D$1 \$2 cathode2 dantenna A=35.0028p P=58.08u m=1
+D$2 \$2 cathode1 dantenna A=35.0028p P=58.08u m=1
+R$3 \$2 anode ptap1 A=141.2964p P=221.76u
+.ENDS sg13g2_DCNDiode
+
+.SUBCKT sg13g2_Clamp_N20N0D \$2 iovss pad[0] pad[1] pad[2] pad[3] pad[4] pad[5]
++ pad[6] pad[7] pad[8] pad[9]
+M$1 iovss \$4 pad[0] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.664p AD=4.004p
++ PS=15.32u PD=10.62u
+M$3 iovss \$4 pad[1] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$5 iovss \$4 pad[2] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$7 iovss \$4 pad[3] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$9 iovss \$4 pad[4] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$11 iovss \$4 pad[5] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$13 iovss \$4 pad[6] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$15 iovss \$4 pad[7] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$17 iovss \$4 pad[8] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.004p
++ PS=10.62u PD=10.62u
+M$19 iovss \$4 pad[9] \$2 sg13_hv_nmos L=0.6u W=8.8u AS=4.004p AD=4.664p
++ PS=10.62u PD=15.32u
+R$21 iovss \$4 rppd w=0.5u l=3.54u ps=0 b=0 m=1
+R$22 \$2 iovss ptap1 A=55.7736p P=328.08u
+.ENDS sg13g2_Clamp_N20N0D

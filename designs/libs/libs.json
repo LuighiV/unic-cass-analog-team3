@@ -1,0 +1,6 @@
+{
+  "sg13g2_io_sg13g2_io": "/home/designer/designs/libs/sg13g2_io/gds/sg13g2_io.gds",
+  "core_chiptop_padring": "/home/designer/designs/libs/core_chiptop/padring/padring.gds",
+  "core_chiptop_sample_pads": "/home/designer/designs/libs/core_chiptop/sample_pads/sample_pads.gds",
+  "sg13g2_stdcell_sg13g2_stdcell": "/home/designer/designs/libs/sg13g2_stdcell/gds/sg13g2_stdcell.gds"
+}

@@ -1,0 +1,108 @@
+* NGSPICE file created from sample_pads.ext - technology: ihp-sg13g2
+
+.subckt sg13g2_DCNDiode guard anode cathode
+X0 anode cathode dantenna l=1.26u w=27.78u
+X1 anode cathode dantenna l=1.26u w=27.78u
+.ends
+
+.subckt sg13g2_SecondaryProtection iovss core pad iovdd
+X0 core pad iovss rppd l=2u w=1u
+X1 iovss core dantenna l=3.1u w=0.64u
+X2 core iovdd dpantenna l=0.64u w=4.98u
+.ends
+
+.subckt sg13g2_Clamp_P20N0D pad iovss iovdd
+X0 iovdd a_5044_476# pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u M=40
+X1 a_5044_476# iovdd iovdd rppd l=12.9u w=0.5u
+.ends
+
+.subckt sg13g2_DCPDiode guard cathode anode
+X0 anode cathode dpantenna l=1.26u w=27.78u
+X1 anode cathode dpantenna l=1.26u w=27.78u
+.ends
+
+.subckt sg13g2_Clamp_N20N0D pad iovss w_n124_n124#
+X0 a_5044_476# iovss iovss rppd l=3.54u w=0.5u
+X1 pad a_5044_476# iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u M=20
+.ends
+
+.subckt sg13g2_IOPadAnalog pad padres vss iovdd vdd sg13g2_DCNDiode_0/guard
+Xsg13g2_DCNDiode_0 sg13g2_DCNDiode_0/guard vss pad sg13g2_DCNDiode
+Xsg13g2_SecondaryProtection_0 vss padres pad iovdd sg13g2_SecondaryProtection
+Xsg13g2_Clamp_P20N0D_0 pad vss iovdd sg13g2_Clamp_P20N0D
+Xsg13g2_DCPDiode_0 vss iovdd pad sg13g2_DCPDiode
+Xsg13g2_Clamp_N20N0D_0 pad vss sg13g2_DCNDiode_0/guard sg13g2_Clamp_N20N0D
+.ends
+
+.subckt sg13g2_DCNDiode$1 guard anode cathode
+X0 anode cathode dantenna l=1.26u w=27.78u
+X1 anode cathode dantenna l=1.26u w=27.78u
+.ends
+
+.subckt sg13g2_DCPDiode$1 guard cathode anode
+X0 anode cathode dpantenna l=1.26u w=27.78u
+X1 anode cathode dpantenna l=1.26u w=27.78u
+.ends
+
+.subckt sg13g2_IOPadVss vdd iovdd sg13g2_DCNDiode$1_0/guard vss
+Xsg13g2_DCNDiode$1_0 sg13g2_DCNDiode$1_0/guard vss vss sg13g2_DCNDiode$1
+Xsg13g2_DCPDiode$1_0 vss iovdd vss sg13g2_DCPDiode$1
+.ends
+
+.subckt sg13g2_RCClampInverter$1 out in iovss supply
+X0 iovss in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0.10408n ps=0.84352m w=9u l=9.5u M=14
+X1 out in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=1.71p ps=9.38u w=9u l=0.5u M=12
+X2 supply in out supply sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u M=50
+.ends
+
+.subckt sg13g2_RCClampResistor$1 pin2 pin1
+X0 a_5280_4086# a_4950_0# sub rppd l=20u w=1u
+X1 a_6600_4086# a_6930_0# sub rppd l=20u w=1u
+X2 a_7260_4086# a_6930_0# sub rppd l=20u w=1u
+X3 a_2640_4086# a_2310_0# sub rppd l=20u w=1u
+X4 a_4620_4086# a_4290_0# sub rppd l=20u w=1u
+X5 a_660_4086# a_990_0# sub rppd l=20u w=1u
+X6 a_6600_4086# a_6270_0# sub rppd l=20u w=1u
+X7 a_1980_4086# a_2310_0# sub rppd l=20u w=1u
+X8 a_1980_4086# a_1650_0# sub rppd l=20u w=1u
+X9 a_3960_4086# a_3630_0# sub rppd l=20u w=1u
+X10 a_660_4086# a_330_0# sub rppd l=20u w=1u
+X11 a_3960_4086# a_4290_0# sub rppd l=20u w=1u
+X12 a_5940_4086# a_5610_0# sub rppd l=20u w=1u
+X13 a_5940_4086# a_6270_0# sub rppd l=20u w=1u
+X14 a_7920_4086# a_7590_0# sub rppd l=20u w=1u
+X15 a_7920_4086# pin2 sub rppd l=20u w=1u
+X16 a_1320_4086# a_1650_0# sub rppd l=20u w=1u
+X17 a_0_4086# pin1 sub rppd l=20u w=1u
+X18 a_0_4086# a_330_0# sub rppd l=20u w=1u
+X19 a_3300_4086# a_3630_0# sub rppd l=20u w=1u
+X20 a_5280_4086# a_5610_0# sub rppd l=20u w=1u
+X21 a_7260_4086# a_7590_0# sub rppd l=20u w=1u
+X22 a_1320_4086# a_990_0# sub rppd l=20u w=1u
+X23 a_2640_4086# a_2970_0# sub rppd l=20u w=1u
+X24 a_3300_4086# a_2970_0# sub rppd l=20u w=1u
+X25 a_4620_4086# a_4950_0# sub rppd l=20u w=1u
+.ends
+
+.subckt sg13g2_Clamp_N43N43D4R$1 gate pad iovss w_n124_n124#
+X0 pad gate iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u M=172
+X1 iovss gate dantenna l=0.48u w=0.48u
+.ends
+
+.subckt sg13g2_IOPadVdd iovdd sg13g2_RCClampResistor$1_0/sub vdd w_n124_1076#
+Xsg13g2_RCClampInverter$1_0 sg13g2_RCClampInverter$1_0/out sg13g2_RCClampInverter$1_0/in
++ sg13g2_RCClampResistor$1_0/sub vdd sg13g2_RCClampInverter$1
+Xsg13g2_RCClampResistor$1_0 sg13g2_RCClampInverter$1_0/in vdd sg13g2_RCClampResistor$1
+Xsg13g2_Clamp_N43N43D4R$1_0 sg13g2_RCClampInverter$1_0/out vdd sg13g2_RCClampResistor$1_0/sub
++ w_n124_1076# sg13g2_Clamp_N43N43D4R$1
+.ends
+
+.subckt sample_pads padres vss pad vdd
+Xsg13g2_IOPadAnalog_0 pad padres vss sg13g2_IOPadVss_0/iovdd vdd sg13g2_IOPadVss_0/sg13g2_DCNDiode$1_0/guard
++ sg13g2_IOPadAnalog
+Xsg13g2_IOPadVss_0 vdd sg13g2_IOPadVss_0/iovdd sg13g2_IOPadVss_0/sg13g2_DCNDiode$1_0/guard
++ vss sg13g2_IOPadVss
+Xsg13g2_IOPadVdd_0 sg13g2_IOPadVss_0/iovdd vss vdd sg13g2_IOPadVss_0/sg13g2_DCNDiode$1_0/guard
++ sg13g2_IOPadVdd
+.ends
+

@@ -1,0 +1,244 @@
+* NGSPICE file created from padring_analog.ext - technology: ihp-sg13g2
+
+.subckt sg13g2_DCNDiode guard anode cathode cathode_uq0
+X0 anode cathode_uq0 dantenna l=1.26u w=27.78u
+X1 anode cathode dantenna l=1.26u w=27.78u
+.ends
+
+.subckt sg13g2_SecondaryProtection iovdd iovss core pad
+X0 core pad iovss rppd l=2u w=1u
+X1 iovss core dantenna l=3.1u w=0.64u
+X2 core iovdd dpantenna l=0.64u w=4.98u
+.ends
+
+.subckt sg13g2_Clamp_P20N0D iovss iovdd pad pad_uq0 pad_uq1 pad_uq2 pad_uq3 pad_uq4
++ pad_uq5 pad_uq6 pad_uq7 pad_uq8
+X0 iovdd a_5044_476# pad_uq6 iovdd sg13_hv_pmos ad=4.2624p pd=14.6u as=7.8588p ps=15.68u w=6.66u l=0.6u M=4
+X1 pad_uq2 a_5044_476# iovdd iovdd sg13_hv_pmos ad=7.8588p pd=15.68u as=4.2624p ps=14.6u w=6.66u l=0.6u M=4
+X2 iovdd a_5044_476# pad iovdd sg13_hv_pmos ad=4.2624p pd=14.6u as=7.8588p ps=15.68u w=6.66u l=0.6u M=4
+X3 a_5044_476# iovdd iovdd rppd l=12.9u w=0.5u
+X4 iovdd a_5044_476# pad_uq5 iovdd sg13_hv_pmos ad=4.2624p pd=14.6u as=7.8588p ps=15.68u w=6.66u l=0.6u M=4
+X5 iovdd a_5044_476# pad_uq1 iovdd sg13_hv_pmos ad=4.2624p pd=14.6u as=7.8588p ps=15.68u w=6.66u l=0.6u M=4
+X6 pad_uq3 a_5044_476# iovdd iovdd sg13_hv_pmos ad=7.8588p pd=15.68u as=4.2624p ps=14.6u w=6.66u l=0.6u M=4
+X7 iovdd a_5044_476# pad_uq7 iovdd sg13_hv_pmos ad=4.2624p pd=14.6u as=7.8588p ps=15.68u w=6.66u l=0.6u M=4
+X8 pad_uq0 a_5044_476# iovdd iovdd sg13_hv_pmos ad=7.8588p pd=15.68u as=4.2624p ps=14.6u w=6.66u l=0.6u M=4
+X9 pad_uq8 a_5044_476# iovdd iovdd sg13_hv_pmos ad=7.8588p pd=15.68u as=3.1302p ps=14.26u w=6.66u l=0.6u M=4
+X10 pad_uq4 a_5044_476# iovdd iovdd sg13_hv_pmos ad=7.8588p pd=15.68u as=4.2624p ps=14.6u w=6.66u l=0.6u M=4
+.ends
+
+.subckt sg13g2_DCPDiode guard cathode anode anode_uq0
+X0 anode cathode dpantenna l=1.26u w=27.78u
+X1 anode_uq0 cathode dpantenna l=1.26u w=27.78u
+.ends
+
+.subckt sg13g2_Clamp_N20N0D iovss pad pad_uq0 pad_uq1 pad_uq2 pad_uq3 pad_uq4 pad_uq5
++ pad_uq6 pad_uq7 pad_uq8 w_n124_n124#
+X0 a_5044_476# iovss iovss rppd l=3.54u w=0.5u
+X1 pad_uq5 a_5044_476# iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=2
+X2 iovss a_5044_476# pad_uq1 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=2
+X3 pad_uq6 a_5044_476# iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=2
+X4 iovss a_5044_476# pad_uq2 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=2
+X5 pad_uq3 a_5044_476# iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=2
+X6 iovss a_5044_476# pad_uq7 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=2
+X7 pad_uq0 a_5044_476# iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=2
+X8 pad_uq8 a_5044_476# iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.068p ps=9.74u w=4.4u l=0.6u M=2
+X9 iovss a_5044_476# pad iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=2
+X10 pad_uq4 a_5044_476# iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=2
+.ends
+
+.subckt sg13g2_IOPadAnalog pad padres iovss iovdd vdd vss iovdd_uq0 sg13g2_DCNDiode_0/guard
+Xsg13g2_DCNDiode_0 sg13g2_DCNDiode_0/guard vss pad pad sg13g2_DCNDiode
+Xsg13g2_SecondaryProtection_0 iovdd vss padres pad sg13g2_SecondaryProtection
+Xsg13g2_Clamp_P20N0D_0 vss iovdd_uq0 pad pad pad pad pad pad pad pad pad pad sg13g2_Clamp_P20N0D
+Xsg13g2_DCPDiode_0 vss iovdd_uq0 pad pad sg13g2_DCPDiode
+Xsg13g2_Clamp_N20N0D_0 vss pad pad pad pad pad pad pad pad pad pad sg13g2_DCNDiode_0/guard
++ sg13g2_Clamp_N20N0D
+.ends
+
+.subckt sg13g2_IOPadIOVss vss vdd iovdd sg13g2_DCNDiode_0/guard
+Xsg13g2_DCNDiode_0 sg13g2_DCNDiode_0/guard vss vss vss sg13g2_DCNDiode
+Xsg13g2_DCPDiode_0 vss iovdd vss vss sg13g2_DCPDiode
+.ends
+
+.subckt sg13g2_Clamp_N43N43D4R iovss gate pad pad_uq0 pad_uq1 pad_uq2 pad_uq3 pad_uq4
++ pad_uq5 pad_uq6 pad_uq7 pad_uq8 pad_uq9 pad_uq10 pad_uq11 pad_uq12 pad_uq13 pad_uq14
++ pad_uq15 pad_uq16 pad_uq17 pad_uq18 pad_uq19 pad_uq20 w_n124_n124#
+X0 pad_uq9 gate iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=8
+X1 pad gate iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=8
+X2 pad_uq4 gate iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=8
+X3 iovss gate pad_uq13 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=8
+X4 iovss gate pad_uq19 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=8
+X5 iovss gate pad_uq1 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=8
+X6 iovss gate pad_uq15 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=8
+X7 pad_uq17 gate iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=8
+X8 pad_uq0 gate iovss iovss sg13_hv_nmos ad=3.256p pd=10.28u as=2.816p ps=10.08u w=4.4u l=0.6u M=4
+X9 pad_uq12 gate iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=8
+X10 pad_uq5 gate iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=8
+X11 iovss gate pad_uq16 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=8
+X12 iovss gate pad_uq3 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=8
+X13 pad_uq6 gate iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=8
+X14 iovss gate pad_uq18 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=8
+X15 pad_uq14 gate iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=8
+X16 iovss gate pad_uq20 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=8
+X17 pad_uq10 gate iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=8
+X18 iovss gate pad_uq8 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=8
+X19 pad_uq11 gate iovss iovss sg13_hv_nmos ad=5.192p pd=11.16u as=2.816p ps=10.08u w=4.4u l=0.6u M=8
+X20 iovss gate pad_uq2 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=8
+X21 iovss gate pad_uq7 iovss sg13_hv_nmos ad=2.816p pd=10.08u as=5.192p ps=11.16u w=4.4u l=0.6u M=8
+X22 iovss gate dantenna l=0.48u w=0.48u
+.ends
+
+.subckt sg13g2_RCClampInverter iovss supply out in
+X0 iovss in iovss iovss sg13_hv_nmos ad=3.42p pd=18.76u as=0 ps=0 w=9u l=9.5u M=14
+X1 out in iovss iovss sg13_hv_nmos ad=3.42p pd=18.76u as=3.42p ps=18.76u w=9u l=0.5u M=12
+X2 supply in out supply sg13_hv_pmos ad=2.66p pd=14.76u as=2.66p ps=14.76u w=7u l=0.5u M=50
+.ends
+
+.subckt sg13g2_RCClampResistor pin2 pin1 sub
+X0 a_5280_4086# a_4950_0# sub rppd l=20u w=1u
+X1 a_6600_4086# a_6930_0# sub rppd l=20u w=1u
+X2 a_7260_4086# a_6930_0# sub rppd l=20u w=1u
+X3 a_2640_4086# a_2310_0# sub rppd l=20u w=1u
+X4 a_4620_4086# a_4290_0# sub rppd l=20u w=1u
+X5 a_660_4086# a_990_0# sub rppd l=20u w=1u
+X6 a_6600_4086# a_6270_0# sub rppd l=20u w=1u
+X7 a_1980_4086# a_2310_0# sub rppd l=20u w=1u
+X8 a_1980_4086# a_1650_0# sub rppd l=20u w=1u
+X9 a_3960_4086# a_3630_0# sub rppd l=20u w=1u
+X10 a_660_4086# a_330_0# sub rppd l=20u w=1u
+X11 a_3960_4086# a_4290_0# sub rppd l=20u w=1u
+X12 a_5940_4086# a_5610_0# sub rppd l=20u w=1u
+X13 a_5940_4086# a_6270_0# sub rppd l=20u w=1u
+X14 a_7920_4086# a_7590_0# sub rppd l=20u w=1u
+X15 a_7920_4086# pin2 sub rppd l=20u w=1u
+X16 a_1320_4086# a_1650_0# sub rppd l=20u w=1u
+X17 a_0_4086# pin1 sub rppd l=20u w=1u
+X18 a_0_4086# a_330_0# sub rppd l=20u w=1u
+X19 a_3300_4086# a_3630_0# sub rppd l=20u w=1u
+X20 a_5280_4086# a_5610_0# sub rppd l=20u w=1u
+X21 a_7260_4086# a_7590_0# sub rppd l=20u w=1u
+X22 a_1320_4086# a_990_0# sub rppd l=20u w=1u
+X23 a_2640_4086# a_2970_0# sub rppd l=20u w=1u
+X24 a_3300_4086# a_2970_0# sub rppd l=20u w=1u
+X25 a_4620_4086# a_4950_0# sub rppd l=20u w=1u
+.ends
+
+.subckt sg13g2_IOPadIOVdd iovdd vdd iovss vss
+Xsg13g2_Clamp_N43N43D4R_0 vss sg13g2_RCClampInverter_0/out iovdd iovdd iovdd iovdd
++ iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd iovdd
++ iovdd iovdd iovdd iovdd iovdd sg13g2_Clamp_N43N43D4R
+Xsg13g2_RCClampInverter_0 vss iovdd sg13g2_RCClampInverter_0/out sg13g2_RCClampInverter_0/in
++ sg13g2_RCClampInverter
+Xsg13g2_RCClampResistor_0 sg13g2_RCClampInverter_0/in iovdd vss sg13g2_RCClampResistor
+.ends
+
+.subckt sg13g2_IOPadVss vdd iovdd vss sg13g2_DCNDiode_0/guard
+Xsg13g2_DCNDiode_0 sg13g2_DCNDiode_0/guard vss vss vss sg13g2_DCNDiode
+Xsg13g2_DCPDiode_0 vss iovdd vss vss sg13g2_DCPDiode
+.ends
+
+.subckt sg13g2_IOPadVdd vdd iovdd iovss iovdd_uq0 w_n124_1076# vss
+Xsg13g2_Clamp_N43N43D4R_0 vss sg13g2_RCClampInverter_0/out vdd vdd vdd vdd vdd vdd
++ vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd vdd w_n124_1076# sg13g2_Clamp_N43N43D4R
+Xsg13g2_RCClampInverter_0 vss vdd sg13g2_RCClampInverter_0/out sg13g2_RCClampInverter_0/in
++ sg13g2_RCClampInverter
+Xsg13g2_RCClampResistor_0 sg13g2_RCClampInverter_0/in vdd vss sg13g2_RCClampResistor
+.ends
+
+.subckt padring_analog VDD analog_io[0] analog_io[10] analog_io[11] analog_io[12]
++ analog_io[13] analog_io[14] analog_io[15] analog_io[16] analog_io[17] analog_io[18]
++ analog_io[19] analog_io[1] analog_io[20] analog_io[21] analog_io[22] analog_io[23]
++ analog_io[24] analog_io[25] analog_io[26] analog_io[27] analog_io[28] analog_io[29]
++ analog_io[2] analog_io[30] analog_io[31] analog_io[32] analog_io[33] analog_io[34]
++ analog_io[35] analog_io[3] analog_io[4] analog_io[5] analog_io[6] analog_io[7] analog_io[8]
++ analog_io[9] IOVDD VSS
+Xsg13g2_IOPadAnalog_0 analog_io[18] sg13g2_IOPadAnalog_0/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_1 analog_io[19] sg13g2_IOPadAnalog_1/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_2 analog_io[20] sg13g2_IOPadAnalog_2/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_3 analog_io[21] sg13g2_IOPadAnalog_3/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_30 analog_io[25] sg13g2_IOPadAnalog_30/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_4 analog_io[14] sg13g2_IOPadAnalog_4/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_20 analog_io[27] sg13g2_IOPadAnalog_20/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_31 analog_io[26] sg13g2_IOPadAnalog_31/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_5 analog_io[15] sg13g2_IOPadAnalog_5/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_21 analog_io[29] sg13g2_IOPadAnalog_21/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_32 analog_io[4] sg13g2_IOPadAnalog_32/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_10 analog_io[1] sg13g2_IOPadAnalog_10/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadIOVss_0 VSS VDD IOVDD IOVDD sg13g2_IOPadIOVss
+Xsg13g2_IOPadAnalog_6 analog_io[16] sg13g2_IOPadAnalog_6/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_22 analog_io[30] sg13g2_IOPadAnalog_22/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_33 analog_io[31] sg13g2_IOPadAnalog_33/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadIOVss_1 VSS VDD IOVDD IOVDD sg13g2_IOPadIOVss
+Xsg13g2_IOPadAnalog_11 analog_io[2] sg13g2_IOPadAnalog_11/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_7 analog_io[17] sg13g2_IOPadAnalog_7/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_23 analog_io[28] sg13g2_IOPadAnalog_23/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_34 analog_io[22] sg13g2_IOPadAnalog_34/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_12 analog_io[10] sg13g2_IOPadAnalog_12/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadIOVss_2 VSS VDD IOVDD IOVDD sg13g2_IOPadIOVss
+Xsg13g2_IOPadAnalog_8 analog_io[0] sg13g2_IOPadAnalog_8/padres VSS IOVDD VDD VSS IOVDD
++ IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadIOVdd_0 IOVDD VDD VSS VSS sg13g2_IOPadIOVdd
+Xsg13g2_IOPadIOVss_3 VSS VDD IOVDD IOVDD sg13g2_IOPadIOVss
+Xsg13g2_IOPadAnalog_24 analog_io[32] sg13g2_IOPadAnalog_24/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_13 analog_io[11] sg13g2_IOPadAnalog_13/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_35 analog_io[13] sg13g2_IOPadAnalog_35/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadIOVdd_1 IOVDD VDD VSS VSS sg13g2_IOPadIOVdd
+Xsg13g2_IOPadAnalog_9 analog_io[3] sg13g2_IOPadAnalog_9/padres VSS IOVDD VDD VSS IOVDD
++ IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadIOVss_4 VSS VDD IOVDD IOVDD sg13g2_IOPadIOVss
+Xsg13g2_IOPadAnalog_25 analog_io[33] sg13g2_IOPadAnalog_25/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_14 analog_io[12] sg13g2_IOPadAnalog_14/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadIOVdd_2 IOVDD VDD VSS VSS sg13g2_IOPadIOVdd
+Xsg13g2_IOPadAnalog_26 analog_io[34] sg13g2_IOPadAnalog_26/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_15 analog_io[9] sg13g2_IOPadAnalog_15/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadIOVdd_3 IOVDD VDD VSS VSS sg13g2_IOPadIOVdd
+Xsg13g2_IOPadAnalog_27 analog_io[35] sg13g2_IOPadAnalog_27/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_16 analog_io[8] sg13g2_IOPadAnalog_16/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadIOVdd_4 IOVDD VDD VSS VSS sg13g2_IOPadIOVdd
+Xsg13g2_IOPadAnalog_17 analog_io[7] sg13g2_IOPadAnalog_17/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_28 analog_io[23] sg13g2_IOPadAnalog_28/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_29 analog_io[24] sg13g2_IOPadAnalog_29/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_18 analog_io[6] sg13g2_IOPadAnalog_18/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadAnalog_19 analog_io[5] sg13g2_IOPadAnalog_19/padres VSS IOVDD VDD VSS
++ IOVDD IOVDD sg13g2_IOPadAnalog
+Xsg13g2_IOPadVss_0 VDD IOVDD VSS IOVDD sg13g2_IOPadVss
+Xsg13g2_IOPadVss_1 VDD IOVDD VSS IOVDD sg13g2_IOPadVss
+Xsg13g2_IOPadVss_2 VDD IOVDD VSS IOVDD sg13g2_IOPadVss
+Xsg13g2_IOPadVdd_0 VDD IOVDD VSS IOVDD IOVDD VSS sg13g2_IOPadVdd
+Xsg13g2_IOPadVdd_1 VDD IOVDD VSS IOVDD IOVDD VSS sg13g2_IOPadVdd
+Xsg13g2_IOPadVdd_2 VDD IOVDD VSS IOVDD IOVDD VSS sg13g2_IOPadVdd
+.ends
+

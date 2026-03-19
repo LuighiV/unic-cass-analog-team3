@@ -1,0 +1,72 @@
+** sch_path: /home/designer/designs/libs/core_chiptop/padring/padring.sch
+.subckt padring VDD VSS ui_PAD[0] uo_PAD[0] uo_CORE2PAD[0] ui_CORE2PAD[0] ui_PAD[1] uo_PAD[1] ui_CORE2PAD[1] uo_CORE2PAD[1]
++ ui_PAD[2] uo_CORE2PAD[2] ui_CORE2PAD[2] uo_PAD[2] uo_CORE2PAD[3] uo_PAD[3] ui_CORE2PAD[3] ui_PAD[3] ui_CORE2PAD[4] uo_PAD[4] uo_CORE2PAD[4]
++ ui_PAD[4] ui_CORE2PAD[5] ui_PAD[5] uo_CORE2PAD[5] uo_PAD[5] uo_CORE2PAD[6] ui_CORE2PAD[6] ui_PAD[6] uo_PAD[6] uo_PAD[7] ui_PAD[7]
++ uo_CORE2PAD[7] ui_CORE2PAD[7] uo_CORE2PAD[8] uo_PAD[8] ui_CORE2PAD[8] ui_PAD[8] uo_PAD[9] ui_CORE2PAD[9] ui_PAD[9] uo_CORE2PAD[9]
++ uo_CORE2PAD[10] ui_CORE2PAD[10] ui_PAD[10] uo_PAD[10] ui_PAD[11] uo_PAD[11] ui_CORE2PAD[11] uo_CORE2PAD[11] ui_PAD[12] uo_PAD[12] ui_CORE2PAD[12]
++ uo_CORE2PAD[12] uo_PAD[13] ui_CORE2PAD[13] ui_PAD[13] uo_CORE2PAD[13] uo_PAD[14] ui_CORE2PAD[14] ui_PAD[14] uo_CORE2PAD[14] ui_PAD[15] uo_PAD[15]
++ ui_CORE2PAD[15] uo_CORE2PAD[15] io_clock_p2c io_clock_PAD io_reset_p2c io_reset_PAD analog_io_0_padres analog_io_0 analog_io_1_padres analog_io_1
++ IOVDD
+*.PININFO VDD:B ui_PAD[0]:B ui_CORE2PAD[0]:B ui_PAD[1]:B ui_CORE2PAD[1]:B ui_PAD[2]:B ui_CORE2PAD[2]:B ui_PAD[3]:B
+*+ ui_CORE2PAD[3]:B ui_PAD[4]:B ui_CORE2PAD[4]:B ui_PAD[5]:B ui_CORE2PAD[5]:B ui_PAD[6]:B ui_CORE2PAD[6]:B ui_PAD[7]:B ui_CORE2PAD[7]:B ui_PAD[8]:B
+*+ ui_CORE2PAD[8]:B ui_PAD[9]:B ui_CORE2PAD[9]:B ui_PAD[10]:B ui_CORE2PAD[10]:B ui_PAD[11]:B ui_CORE2PAD[11]:B ui_PAD[12]:B ui_CORE2PAD[12]:B
+*+ ui_PAD[13]:B ui_CORE2PAD[13]:B ui_PAD[14]:B ui_CORE2PAD[14]:B ui_PAD[15]:B ui_CORE2PAD[15]:B uo_PAD[0]:B uo_CORE2PAD[0]:B uo_PAD[1]:B
+*+ uo_CORE2PAD[1]:B uo_PAD[2]:B uo_CORE2PAD[2]:B uo_PAD[3]:B uo_CORE2PAD[3]:B uo_PAD[4]:B uo_CORE2PAD[4]:B uo_PAD[5]:B uo_CORE2PAD[5]:B uo_PAD[6]:B
+*+ uo_CORE2PAD[6]:B uo_PAD[7]:B uo_CORE2PAD[7]:B uo_PAD[8]:B uo_CORE2PAD[8]:B uo_PAD[9]:B uo_CORE2PAD[9]:B uo_PAD[10]:B uo_CORE2PAD[10]:B
+*+ uo_PAD[11]:B uo_CORE2PAD[11]:B uo_PAD[12]:B uo_CORE2PAD[12]:B uo_PAD[13]:B uo_CORE2PAD[13]:B uo_PAD[14]:B uo_CORE2PAD[14]:B uo_PAD[15]:B
+*+ uo_CORE2PAD[15]:B io_clock_PAD:B io_clock_p2c:B io_reset_PAD:B io_reset_p2c:B analog_io_0:B analog_io_0_padres:B analog_io_1:B analog_io_1_padres:B
+*+ VSS:B IOVDD:B
+Xsg13g2_IOPadVdd_west IOVDD VSS VSS VDD sg13g2_IOPadVdd
+Xsg13g2_IOPadVss_west IOVDD VSS VSS VDD sg13g2_IOPadVSS
+Xsg13g2_IOPadIn_ui[0] IOVDD VSS ui_CORE2PAD[0] VSS VDD ui_PAD[0] sg13g2_IOPadIn
+Xsg13g2_IOPadIn_ui[1] IOVDD VSS ui_CORE2PAD[1] VSS VDD ui_PAD[1] sg13g2_IOPadIn
+Xsg13g2_IOPadIn_ui[2] IOVDD VSS ui_CORE2PAD[2] VSS VDD ui_PAD[2] sg13g2_IOPadIn
+Xsg13g2_IOPadIn_ui[3] IOVDD VSS ui_CORE2PAD[3] VSS VDD ui_PAD[3] sg13g2_IOPadIn
+Xsg13g2_IOPadIn_ui[4] IOVDD VSS ui_CORE2PAD[4] VSS VDD ui_PAD[4] sg13g2_IOPadIn
+Xsg13g2_IOPadIn_ui[5] IOVDD VSS ui_CORE2PAD[5] VSS VDD ui_PAD[5] sg13g2_IOPadIn
+Xsg13g2_IOPadIn_ui[6] IOVDD VSS ui_CORE2PAD[6] VSS VDD ui_PAD[6] sg13g2_IOPadIn
+Xsg13g2_IOPadIn_ui[7] IOVDD VSS ui_CORE2PAD[7] VSS VDD ui_PAD[7] sg13g2_IOPadIn
+Xsg13g2_IOPadIOVdd_west IOVDD VSS VSS VDD sg13g2_IOPadIOVdd
+Xsg13g2_IOPadIOVss_west IOVDD VSS VSS VDD sg13g2_IOPadIOVss
+Xsg13g2_IOPadVdd_south IOVDD VSS VSS VDD sg13g2_IOPadVdd
+Xsg13g2_IOPadVss_south IOVDD VSS VSS VDD sg13g2_IOPadVSS
+Xsg13g2_IOPadIn_ui[9] IOVDD VSS ui_CORE2PAD[9] VSS VDD ui_PAD[9] sg13g2_IOPadIn
+Xsg13g2_IOPadIn_ui[10] IOVDD VSS ui_CORE2PAD[10] VSS VDD ui_PAD[10] sg13g2_IOPadIn
+Xsg13g2_IOPadIn_ui[11] IOVDD VSS ui_CORE2PAD[11] VSS VDD ui_PAD[11] sg13g2_IOPadIn
+Xsg13g2_IOPadIn_ui[12] IOVDD VSS ui_CORE2PAD[12] VSS VDD ui_PAD[12] sg13g2_IOPadIn
+Xsg13g2_IOPadIn_ui[13] IOVDD VSS ui_CORE2PAD[13] VSS VDD ui_PAD[13] sg13g2_IOPadIn
+Xsg13g2_IOPadIn_ui[14] IOVDD VSS ui_CORE2PAD[14] VSS VDD ui_PAD[14] sg13g2_IOPadIn
+Xsg13g2_IOPadIn_ui[15] IOVDD VSS ui_CORE2PAD[15] VSS VDD ui_PAD[15] sg13g2_IOPadIn
+Xsg13g2_IOPadIOVdd_south IOVDD VSS VSS VDD sg13g2_IOPadIOVdd
+Xsg13g2_IOPadIOVss_south IOVDD VSS VSS VDD sg13g2_IOPadIOVss
+Xsg13g2_IOPadIn_ui[8] IOVDD VSS ui_CORE2PAD[8] VSS VDD ui_PAD[8] sg13g2_IOPadIn
+Xsg13g2_IOPad_analog_io_0 IOVDD VSS analog_io_0_padres VSS VDD analog_io_0 sg13g2_IOPadAnalog
+Xsg13g2_IOPad_io_clock IOVDD VSS io_clock_p2c VSS VDD io_clock_PAD sg13g2_IOPadIn
+Xsg13g2_IOPadVdd_east IOVDD VSS VSS VDD sg13g2_IOPadVdd
+Xsg13g2_IOPadVss_east IOVDD VSS VSS VDD sg13g2_IOPadVSS
+Xsg13g2_IOPadOut30mA_uo[0] IOVDD VSS uo_CORE2PAD[0] VSS VDD uo_PAD[0] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadOut30mA_uo[1] IOVDD VSS uo_CORE2PAD[1] VSS VDD uo_PAD[1] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadOut30mA_uo[2] IOVDD VSS uo_CORE2PAD[2] VSS VDD uo_PAD[2] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadOut30mA_uo[3] IOVDD VSS uo_CORE2PAD[3] VSS VDD uo_PAD[3] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadOut30mA_uo[4] IOVDD VSS uo_CORE2PAD[4] VSS VDD uo_PAD[4] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadOut30mA_uo[5] IOVDD VSS uo_CORE2PAD[5] VSS VDD uo_PAD[5] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadOut30mA_uo[6] IOVDD VSS uo_CORE2PAD[6] VSS VDD uo_PAD[6] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadOut30mA_uo[7] IOVDD VSS uo_CORE2PAD[7] VSS VDD uo_PAD[7] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadIOVdd_east IOVDD VSS VSS VDD sg13g2_IOPadIOVdd
+Xsg13g2_IOPadIOVss_east IOVDD VSS VSS VDD sg13g2_IOPadIOVss
+Xsg13g2_IOPadOut30mA_uo[8] IOVDD VSS uo_CORE2PAD[8] VSS VDD uo_PAD[8] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadVdd_north IOVDD VSS VSS VDD sg13g2_IOPadVdd
+Xsg13g2_IOPadVss_north IOVDD VSS VSS VDD sg13g2_IOPadVSS
+Xsg13g2_IOPadOut30mA_uo[9] IOVDD VSS uo_CORE2PAD[9] VSS VDD uo_PAD[9] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadOut30mA_uo[10] IOVDD VSS uo_CORE2PAD[10] VSS VDD uo_PAD[10] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadOut30mA_uo[11] IOVDD VSS uo_CORE2PAD[11] VSS VDD uo_PAD[11] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadOut30mA_uo[12] IOVDD VSS uo_CORE2PAD[12] VSS VDD uo_PAD[12] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadOut30mA_uo[13] IOVDD VSS uo_CORE2PAD[13] VSS VDD uo_PAD[13] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadOut30mA_uo[14] IOVDD VSS uo_CORE2PAD[14] VSS VDD uo_PAD[14] sg13g2_IOPadOut30mA
+Xsg13g2_IOPadOut30mA_uo[15] IOVDD VSS uo_CORE2PAD[15] VSS VDD uo_PAD[15] sg13g2_IOPadOut30mA
+Xsg13g2_IOPad_analog_io_1 IOVDD VSS analog_io_1_padres VSS VDD analog_io_1 sg13g2_IOPadAnalog
+Xsg13g2_IOPadIOVdd_north IOVDD VSS VSS VDD sg13g2_IOPadIOVdd
+Xsg13g2_IOPadIOVss_north IOVDD VSS VSS VDD sg13g2_IOPadIOVss
+Xsg13g2_IOPad_io_reset IOVDD VSS io_reset_p2c VSS VDD io_reset_PAD sg13g2_IOPadIn
+.ends
+
