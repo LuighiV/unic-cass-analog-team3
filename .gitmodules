@@ -11,14 +11,14 @@
 	path = designs/openpdk-libraries
 	url = git@github.com:openic-org/openpdk-libraries.git
 [submodule "designs/HPAmplifier"]
-	path = designs/HPAmplifier
+	path = designs/libs/HPAmplifier
 	url = git@github.com:Fundacion-Fulgor/HPAmplifier.git
 [submodule "designs/ROI_LIF_NEURON_UNIC-CASS"]
-	path = designs/ROI_LIF_NEURON_UNIC-CASS
+	path = designs/libs/ROI_LIF_NEURON_UNIC-CASS
 	url = git@github.com:Gior-gio/ROI_LIF_NEURON_UNIC-CASS.git
 [submodule "designs/PWMUSFQ"]
-	path = designs/PWMUSFQ
+	path = designs/libs/PWMUSFQ
 	url = git@github.com:EduHolg/PWMUSFQ.git
 [submodule "designs/unic-cass-wrapper_QDLL"]
-	path = designs/unic-cass-wrapper_QDLL
+	path = designs/libs/unic-cass-wrapper_QDLL
 	url = git@github.com:leonardovazquez/unic-cass-wrapper_QDLL.git
