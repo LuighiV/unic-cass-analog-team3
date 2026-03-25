@@ -717,7 +717,7 @@ N 720 -2600 720 -2460 {lab=IOVSS}
 N 660 -2400 770 -2400 {lab=VSS}
 N 700 -2440 840 -2440 {lab=IOVDD}
 N 720 -2460 880 -2460 {lab=IOVSS}
-N 700 -2600 720 -2600 {lab=IOVSS}
+N 710 -2600 720 -2600 {lab=IOVSS}
 N 2060 -2540 2060 -2340 {lab=#net19}
 N 2150 -2680 2150 -2540 {lab=analog_io[35]}
 N 2110 -2600 2110 -2580 {lab=IOVSS}
@@ -1197,6 +1197,8 @@ N 1260 420 1360 420 {lab=SUB}
 N 1360 380 1360 420 {lab=SUB}
 N 1140 200 1360 200 {lab=VSS}
 N 1360 200 1360 320 {lab=VSS}
+N 710 -2600 710 -2580 {lab=IOVSS}
+N 700 -2600 710 -2600 {lab=IOVSS}
 C {sg13g2_Corner_noptap.sym} 290 -160 0 0 {name=x5}
 C {sg13g2_IOPadAnalog.sym} 840 -160 0 0 {name=x6}
 C {sg13g2_IOPadVss.sym} 700 -160 0 0 {name=x10}
@@ -1295,8 +1297,8 @@ C {sg13g2_IOPadAnalog.sym} 1300 -2540 2 0 {name=x37}
 C {sg13g2_IOPadAnalog.sym} 1140 -2540 2 0 {name=x38}
 C {sg13g2_IOPadAnalog.sym} 980 -2540 2 0 {name=x39}
 C {sg13g2_IOPadAnalog.sym} 820 -2540 2 0 {name=x40}
-C {sg13g2_IOPadIOVdd.sym} 570 -2540 2 0 {name=x41}
-C {sg13g2_IOPadIOVss.sym} 690 -2540 2 0 {name=x42}
+C {sg13g2_IOPadVdd.sym} 570 -2540 2 0 {name=x41}
+C {sg13g2_IOPadVss.sym} 690 -2540 2 0 {name=x42}
 C {lab_pin.sym} 870 -2680 1 0 {name=p21 sig_type=std_logic lab=analog_io[27]}
 C {lab_pin.sym} 1030 -2680 1 0 {name=p22 sig_type=std_logic lab=analog_io[28]}
 C {lab_pin.sym} 1190 -2680 1 0 {name=p23 sig_type=std_logic lab=analog_io[29]}
