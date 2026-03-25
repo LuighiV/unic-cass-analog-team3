@@ -1,3 +1,6 @@
 [submodule "designs/openpdk-libraries"]
 	path = designs/openpdk-libraries
 	url = git@github.com:openic-org/openpdk-libraries.git
+[submodule "designs/libs/IHP__MPC0349"]
+	path = designs/libs/IHP__MPC0349
+	url = git@github.com:LuighiV/IHP__MPC0349.git
