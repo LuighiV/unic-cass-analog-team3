@@ -121,7 +121,7 @@ set_pdk () {
     export KLAYOUT_PATH=$KLAYOUT_HOME:$(realpath $TOOLS/klayout/download)
 
     #alias xschem='xschem --rcfile $PDK_ROOT/$PDK/libs.tech/xschem/xschemrc'
-    unalias xschem
+    unalias xschem 2>/dev/null
     alias xschemtcl='xschem --rcfile $PDK_ROOT/$PDK/libs.tech/xschem/xschemrc'
     alias magic='magic -rcfile $PDK_ROOT/$PDK/libs.tech/magic/*.magicrc'
 
@@ -207,12 +207,12 @@ alias klayout='klayout -rm $DESIGNS/scripts/klayout_lib_manager.py -geometry 160
 
 # loading IHP io cells.
 if [ ! -L ~/.klayout/libraries/sg13g2_io.gds ]; then
-  ln -s /home/designer/designs/libs/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds ~/.klayout/libraries/
+  ln -s /home/designer/designs/libs/sg13g2_io/gds/sg13g2_io.gds ~/.klayout/libraries/
 fi
 
 # loading IHP std cells.
 if [ ! -L ~/.klayout/libraries/sg13g2_stdcell.gds ]; then
-  ln -s /home/designer/designs/libs/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds ~/.klayout/libraries/
+  ln -s /home/designer/designs/libs/sg13g2_stdcell/gds/sg13g2_stdcell.gds ~/.klayout/libraries/
 fi
 
 
