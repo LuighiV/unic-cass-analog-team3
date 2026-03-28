@@ -17,3 +17,8 @@ set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:$env(HOME)/designs/openpdk-librar
 set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:$env(HOME)/designs/libs/sg13g2_io/xschem
 }
 set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:$env(HOME)/designs/libs
+
+set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:$env(HOME)/designs/libs/IHP__MPC0349/dependencies/IHP__OSC3593/OSC3593-main/schematic/xschem
+set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:$env(HOME)/designs/libs/IHP__MPC0349/dependencies/IHP__OPA2251/OPA2251-main/schematic/xschem
+set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:$env(HOME)/designs/libs/IHP__MPC0349/dependencies/IHP__OSC9996/OSC9996-main/schematic/xschem
+set XSCHEM_LIBRARY_PATH ${XSCHEM_LIBRARY_PATH}:$env(HOME)/designs/libs/IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/schematic/xschem
