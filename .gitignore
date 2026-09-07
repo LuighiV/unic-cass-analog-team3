@@ -67,3 +67,5 @@ run_lvs.tcl
 **/drc_run_*
 **/lvs_run_*
 *.bk
+
+**/outputs
