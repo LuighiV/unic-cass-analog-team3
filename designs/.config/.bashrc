@@ -206,15 +206,18 @@ mkdir -p ~/.klayout/libraries
 alias klayout='klayout -rm $DESIGNS/scripts/klayout_lib_manager.py -geometry 1600x900+100+50 -e'
 
 # loading IHP io cells.
-if [ ! -L ~/.klayout/libraries/sg13g2_io.gds ]; then
-  ln -s /home/designer/designs/libs/sg13g2_io/gds/sg13g2_io.gds ~/.klayout/libraries/
+if [ -f ~/.klayout/libraries/sg13g2_io.gds ]; then
+	rm ~/.klayout/libraries/sg13g2_io.gds
 fi
+
+ln -sf $PDK_ROOT/$PDK/libs.ref/sg13g2_io/gds/sg13g2_io.gds ~/.klayout/libraries/sg13g2_io.gds
 
 # loading IHP std cells.
-if [ ! -L ~/.klayout/libraries/sg13g2_stdcell.gds ]; then
-  ln -s /home/designer/designs/libs/sg13g2_stdcell/gds/sg13g2_stdcell.gds ~/.klayout/libraries/
+if [ -f ~/.klayout/libraries/sg13g2_stdcell.gds ]; then
+	rm ~/.klayout/libraries/sg13g2_stdcell.gds
 fi
 
+ln -sf $PDK_ROOT/$PDK/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds ~/.klayout/libraries/sg13g2_stdcell.gds
 
 # Shell, extend local installed packages
 export PATH="${DESIGNS}/user_setup/bin:$PATH"
