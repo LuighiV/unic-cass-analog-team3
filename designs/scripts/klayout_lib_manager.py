@@ -2,7 +2,7 @@ import json
 import os
 from pya import Application, Action, Library
 
-blacklist={"IHP-Open-PDK"}
+blacklist={"IHP-Open-PDK", "libraries"}
 
 def find_gds_files(root_dir):
     """Find all GDS files under the specified directory."""

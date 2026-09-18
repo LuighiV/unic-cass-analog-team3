@@ -1,5 +1,8 @@
 {
-  "sg13g2_io_sg13g2_io": "/home/designer/designs/libs/sg13g2_io/gds/sg13g2_io.gds",
+  "designs_test_0": "/home/designer/designs/libs/test_0.001.gds",
+  "designs_test": "/home/designer/designs/libs/test.gds",
+  "sg13g2_io_sg13g2_io": "/home/designer/designs/libs/sg13g2_io/gds/sg13g2_io.old.gds",
+  "sg13g2_io_sg13g2_IOPadAnalog": "/home/designer/designs/libs/sg13g2_io/gds/sg13g2_IOPadAnalog.gds",
   "core_chiptop_padring": "/home/designer/designs/libs/core_chiptop/padring/padring.gds",
   "core_chiptop_sample_pads": "/home/designer/designs/libs/core_chiptop/sample_pads/sample_pads.gds",
   "core_chiptop_user_project_wrapper": "/home/designer/designs/libs/core_chiptop/user_project_wrapper/user_project_wrapper.gds",
@@ -43,9 +46,14 @@
   "QDLL6501-main_single_resistor": "/home/designer/designs/libs/IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/Layout/single_resistor.gds",
   "QDLL6501-main_PD": "/home/designer/designs/libs/IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/Layout/PD.gds",
   "QDLL6501-main_VCDL_v2": "/home/designer/designs/libs/IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/Layout/VCDL_v2.gds",
+  "QDLL6501-main_RES": "/home/designer/designs/libs/IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/Layout/RES.gds",
   "QDLL6501-main_CP": "/home/designer/designs/libs/IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/Layout/CP.gds",
+  "Layout_QDLL_TOP_test": "/home/designer/designs/libs/IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/Layout/Layout_tests/QDLL_TOP_test.gds",
+  "Layout_QDLL_TOP_testSD": "/home/designer/designs/libs/IHP__MPC0349/dependencies/IHP__QDLL6501/QDLL6501-main/Layout/Layout_tests/QDLL_TOP_testSD.gds",
   "v.1.0.0_QDLL_TOP": "/home/designer/designs/libs/IHP__MPC0349/dependencies/IHP__QDLL6501/release/v.1.0.0/gds/QDLL_TOP.gds",
+  "v.2.0.0_QDLL_TOP": "/home/designer/designs/libs/IHP__MPC0349/dependencies/IHP__QDLL6501/release/v.2.0.0/gds/QDLL_TOP.gds",
   "layout_user_project_wrapper_updated": "/home/designer/designs/libs/IHP__MPC0349/MPC0349-main/layout/klayout/user_project_wrapper_updated.gds",
   "layout_user_project_wrapper": "/home/designer/designs/libs/IHP__MPC0349/MPC0349-main/layout/klayout/user_project_wrapper.gds",
+  "layout_user_project_wrapper_updated_v2": "/home/designer/designs/libs/IHP__MPC0349/MPC0349-main/layout/klayout/user_project_wrapper_updated_v2.gds",
   "layout_MPC0349": "/home/designer/designs/libs/IHP__MPC0349/MPC0349-main/layout/klayout/MPC0349.gds"
 }
