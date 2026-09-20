@@ -1,7 +1,6 @@
 {
-  "designs_test_0": "/home/designer/designs/libs/test_0.001.gds",
-  "designs_test": "/home/designer/designs/libs/test.gds",
   "sg13g2_io_sg13g2_io": "/home/designer/designs/libs/sg13g2_io/gds/sg13g2_io.old.gds",
+  "sg13g2_io_sg13g2_BreakVDD4000": "/home/designer/designs/libs/sg13g2_io/gds/sg13g2_BreakVDD4000.gds",
   "sg13g2_io_sg13g2_IOPadAnalog": "/home/designer/designs/libs/sg13g2_io/gds/sg13g2_IOPadAnalog.gds",
   "core_chiptop_padring": "/home/designer/designs/libs/core_chiptop/padring/padring.gds",
   "core_chiptop_sample_pads": "/home/designer/designs/libs/core_chiptop/sample_pads/sample_pads.gds",
@@ -54,6 +53,8 @@
   "v.2.0.0_QDLL_TOP": "/home/designer/designs/libs/IHP__MPC0349/dependencies/IHP__QDLL6501/release/v.2.0.0/gds/QDLL_TOP.gds",
   "layout_user_project_wrapper_updated": "/home/designer/designs/libs/IHP__MPC0349/MPC0349-main/layout/klayout/user_project_wrapper_updated.gds",
   "layout_user_project_wrapper": "/home/designer/designs/libs/IHP__MPC0349/MPC0349-main/layout/klayout/user_project_wrapper.gds",
-  "layout_user_project_wrapper_updated_v2": "/home/designer/designs/libs/IHP__MPC0349/MPC0349-main/layout/klayout/user_project_wrapper_updated_v2.gds",
-  "layout_MPC0349": "/home/designer/designs/libs/IHP__MPC0349/MPC0349-main/layout/klayout/MPC0349.gds"
+  "layout_MPC0349__exported": "/home/designer/designs/libs/IHP__MPC0349/MPC0349-main/layout/klayout/MPC0349__exported.gds",
+  "layout_MPC0349": "/home/designer/designs/libs/IHP__MPC0349/MPC0349-main/layout/klayout/MPC0349.gds",
+  "layout_user_project_wrapper_updated_common": "/home/designer/designs/libs/IHP__MPC0349/MPC0349-main/layout/klayout/user_project_wrapper_updated_common.gds",
+  "v.1.0.0_MPC0349": "/home/designer/designs/libs/IHP__MPC0349/release/v.1.0.0/gds/MPC0349.gds"
 }
